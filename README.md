@@ -1,4 +1,16 @@
-# imgaug
+# yolo-imgaug
+
+## Korean
+데이터 증강(Augmentation)을 적용하려고 하나, Yolo Format(Class_id, X_center, Y_center, Width, Height)로 되어있는 데이터로 데이터 증강 기법까지 적용하고 다시 레이블을 생성하는 과정을 어려워하는 분들을 위해 간단한 스크립트를 개발해봤다.
+
+`utils/aug.py` 파일을 참고하면 누구나 쉽게 이용 가능할 것이다.
+
+## English
+I developed a simple script for those who are trying to apply data augmentation, but have difficulty in applying data augmentation techniques and re-creating labels with data written in Yolo Format(Class_id, X_center, Y_center, Width, Height)
+
+Anyone can easily use creating augmentation data function by referring `utils/aug.py` file.
+
+---
 
 This python library helps you with augmenting images for your machine learning projects.
 It converts a set of input images into a new, much larger set of slightly altered images.
