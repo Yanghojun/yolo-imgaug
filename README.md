@@ -10,6 +10,14 @@ I developed a simple script for those who are trying to apply data augmentation,
 
 Anyone can easily use creating augmentation data function by referring `utils/aug.py` file.
 
+
+## Command
+
+```python
+python imgaug\utils\aug.py [--n: number] [--data_dir: str] [--save_dir: str]
+python imgaug\utils\aug.py --n 3 --data_dir las_data_annotated --save_dir las_data_augmentation
+```
+
 ---
 
 This python library helps you with augmenting images for your machine learning projects.
