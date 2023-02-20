@@ -84,5 +84,5 @@ if __name__ == '__main__':
     
     # create train, valid directory and Do data split
     data_split('las_data_only_junction', 
-               os.path.join('las_data_only_junction', 'train'), 
-               os.path.join('las_data_only_junction', 'valid'))
+               os.path.join('junction_train'), 
+               os.path.join('junction_valid'))

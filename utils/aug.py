@@ -82,6 +82,11 @@ def create_aug_data(data_dir:str, save_dir:str, n_samples=1)->None:
                 for bbox in aug_bboxes:
                     x1, y1, x2, y2, class_id = bbox.x1, bbox.y1, bbox.x2, bbox.y2, bbox.label
                     
+                    abs_width = x2 - x1
+                    abs_height = y2 - y1
+                    bbox_width = abs_width / img_width
+                    bbox_height = abs_height / img_height
+                    
                     # change coordinate
                     # (xmin, ymin), (xmax, ymax) -> Normalized (x_c, y_c, width, height)
                     x_c = (x2 - (abs_width / 2)) / img_width
