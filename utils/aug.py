@@ -58,7 +58,7 @@ def create_aug_data(data_dir:str, save_dir:str, n_samples=1)->None:
                         rotate=(-25, 25),
                         shear=(-8, 8)
                         ),
-                        iaa.AdditiveGaussianNoise(scale=(0, 0.2*255))
+                        # iaa.AdditiveGaussianNoise(scale=(0, 0.2*255))
                 ])
                 
                 # make BoundingBox objects with type(bboxes) == list
